@@ -1,7 +1,8 @@
 using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
+
 
 
 #if UNITY_EDITOR
@@ -10,21 +11,11 @@ using UnityEditor;
 
 public class MainMenuUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public TMP_InputField nameInputField;
     public void OnClickStart()
     {
         Debug.Log("Game Starting");
+        DataManager.Instance.nameText = nameInputField.text;
         SceneManager.LoadScene(1);
     }
 
