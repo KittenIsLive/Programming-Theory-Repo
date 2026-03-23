@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ObjectHandler : MonoBehaviour
 {
-    private float m_speed = 1f;
+    private float m_speed = 3f;
 
     // ENCAPSULATION
     public float speed
@@ -36,11 +36,20 @@ public class ObjectHandler : MonoBehaviour
     void Update()
     {
         MoveRight();
+        CheckBounds();
     }
 
     // ABSTRACTION
     public virtual void MoveRight()
     {
         transform.Translate(Vector3.right * m_speed * Time.deltaTime);
+    }
+
+    private void CheckBounds()
+    {
+        if (gameObject.transform.position.x >= 15)
+        {
+            Destroy(gameObject);
+        }
     }
 }
