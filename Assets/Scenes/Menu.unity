@@ -511,6 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbdd7ca28a069b4eb2f06cb96591fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameInputField: {fileID: 764490135}
 --- !u!1 &764490133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,6 +1521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd34506a3e98544a8823c58e1031dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: 
 --- !u!4 &1699436520
 Transform:
   m_ObjectHideFlags: 0
