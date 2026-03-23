@@ -45,6 +45,7 @@ public class ObjectHandler : MonoBehaviour
         transform.Translate(Vector3.right * m_speed * Time.deltaTime);
     }
 
+    // ABSTRACTION
     private void CheckBounds()
     {
         if (gameObject.transform.position.x >= 15)
